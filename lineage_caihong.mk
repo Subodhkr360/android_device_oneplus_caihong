@@ -13,6 +13,9 @@ $(call inherit-product, device/oneplus/caihong/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
+#viperx
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 PRODUCT_NAME := lineage_caihong
 PRODUCT_DEVICE := caihong
 PRODUCT_MANUFACTURER := OnePlus
@@ -21,6 +24,20 @@ PRODUCT_MODEL := OPD2403
 PRODUCT_CHARACTERISTICS := nosdcard,tablet
 TARGET_HAS_UDFPS := false
 EXTRA_UDFPS_ANIMATIONS := false
+
+#Axion
+HBM_SUPPORTED := true
+HBM_NODE := /sys/kernel/oplus_display/hbm
+GPU_FREQS_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies
+GPU_MIN_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+TORCH_STR_SUPPORTED := true
+TARGET_INCLUDE_VIPERFX := true
+#
+AXION_CAMERA_REAR_INFO := 13
+AXION_CAMERA_FRONT_INFO := 8
+AXION_MAINTAINER := Snakeඞ
+AXION_PROCESSOR := Snapdragon_8_GEN_3
+TARGET_ENABLE_BLUR := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
