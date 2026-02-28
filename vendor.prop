@@ -12,6 +12,8 @@ debug.sf.auto_latch_unsignaled=0
 ro.surface_flinger.game_default_frame_rate_override=144
 ro.surface_flinger.set_idle_timer_ms=500
 ro.surface_flinger.set_touch_timer_ms=200
+persist.sys.perf.scroll_opt = true
+persist.sys.perf.scroll_opt.heavy_app = 1
 
 # USB
 vendor.usb.product_string=OnePlus Pad 2
