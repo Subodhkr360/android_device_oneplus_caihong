@@ -32,6 +32,7 @@ GPU_FREQS_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies
 GPU_MIN_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
 TORCH_STR_SUPPORTED := true
 TARGET_INCLUDE_VIPERFX := true
+TARGET_INCLUDES_LOS_PREBUILTS := true
 #
 AXION_CAMERA_REAR_INFO := 13
 AXION_CAMERA_FRONT_INFO := 8
