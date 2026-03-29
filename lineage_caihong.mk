@@ -31,7 +31,6 @@ HBM_NODE := /sys/kernel/oplus_display/hbm
 GPU_FREQS_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies
 GPU_MIN_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
 TORCH_STR_SUPPORTED := true
-TARGET_INCLUDE_VIPERFX := true
 TARGET_INCLUDES_LOS_PREBUILTS := true
 PERF_GOV_SUPPORTED := true
 PERF_DEFAULT_GOV := walt
