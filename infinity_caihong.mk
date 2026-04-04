@@ -11,16 +11,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/oneplus/caihong/device.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+$(call inherit-product, vendor/infinity/config/common_full_tablet_wifionly.mk)
 
-PRODUCT_NAME := lineage_caihong
+PRODUCT_NAME := infinity_caihong
 PRODUCT_DEVICE := caihong
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := OPD2403
 PRODUCT_CHARACTERISTICS := nosdcard,tablet
 TARGET_HAS_UDFPS := false
-EXTRA_UDFPS_ANIMATIONS := false
+# Maintainer Name
+INFINITY_MAINTAINER := Subodh
+# Whether Including Google Apps
+WITH_GAPPS := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
