@@ -87,3 +87,4 @@ $(call inherit-product, device/oneplus/sm8650-common/common.mk)
 
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/oneplus/caihong/caihong-vendor.mk)
+$(call inherit-product, hardware/dolby/dolby.mk)
