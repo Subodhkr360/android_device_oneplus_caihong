@@ -33,6 +33,8 @@ GPU_MIN_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
 PERF_GOV_SUPPORTED := true
 PERF_DEFAULT_GOV := walt
 TARGET_INCLUDE_AXFX := false
+BYPASS_CHARGE_SUPPORTED ?= true
+BYPASS_CHARGE_TOGGLE_PATH ?= /sys/class/oplus_chg/battery/mmi_charging_enable
 #
 AXION_CAMERA_REAR_INFO := 13
 AXION_CAMERA_FRONT_INFO := 8
