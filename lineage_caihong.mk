@@ -32,7 +32,7 @@ GPU_FREQS_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/available_frequencies
 GPU_MIN_FREQ_PATH := /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
 PERF_GOV_SUPPORTED := true
 PERF_DEFAULT_GOV := walt
-TARGET_INCLUDE_AXFX := true
+TARGET_INCLUDE_AXFX := false
 #
 AXION_CAMERA_REAR_INFO := 13
 AXION_CAMERA_FRONT_INFO := 8
