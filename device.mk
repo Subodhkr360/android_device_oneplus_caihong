@@ -48,7 +48,6 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
-    OPlusPenResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
     OPlusSystemUIResTarget \
@@ -75,10 +74,6 @@ PRODUCT_SOONG_NAMESPACES += \
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
     firmware_WCNSS_qcom_cfg.ini_symlink
-
-# Wireless pen
-PRODUCT_PACKAGES += \
-    OplusPen
 
 # OnePlus Addons
 $(call inherit-product-if-exists, packages/apps/OnePlusAddons/oneplusaddons.mk)
