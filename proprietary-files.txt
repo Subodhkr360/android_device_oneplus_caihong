@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from OnePlus Pad 2 (OPD2403_16.0.5.702(EX01)).
+## are from OnePlus Pad 2 (OPD2403_16.0.5.1301(EX01)).
 
 # Current blobs with deps disabled:
 # com.oplus.node.mvgsat, com.oplus.node.sstabphoto, com.qti.node.dewarp, com.qti.chi.override, libcamximageformatutils, libchifeature2 depends on multiple versions of the same aidl_interface: android.hardware.graphics.allocator-V1-ndk, android.hardware.graphics.allocator-V2-ndk-source
@@ -800,6 +800,9 @@ odm/bin/hw/vendor.oplus.hardware.pogo_keyboard-service
 odm/etc/init/vendor.oplus.hardware.pogo_keyboard-service.rc
 odm/etc/vintf/manifest/vendor.oplus.hardware.pogo_keyboard.xml
 odm/lib64/libpogo_keyboard.so
+odm/usr/idc/OnePlus_Pad_Pro_Keyboard_Touchpad.idc
+odm/usr/idc/OnePlus_Pad_Smart_Keyboard_Touchpad.idc
+odm/usr/idc/OPPO_Pad_3_Pro_Keyboard_Touchpad.idc
 odm/usr/idc/pogo_touchpad.idc
 
 # Sensors

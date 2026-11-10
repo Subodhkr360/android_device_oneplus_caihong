@@ -7,7 +7,7 @@
 TARGET_IS_TABLET := true
 
 # AAPT
-PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_CONFIG := normal large xlarge
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Audio
@@ -21,7 +21,8 @@ TARGET_SCREEN_WIDTH := 2120
 
 # Carrier
 PRODUCT_VENDOR_PROPERTIES += \
-    ro.carrier=wifi-only
+    ro.carrier=wifi-only \
+    ro.radio.noril=yes
 
 # Display
 PRODUCT_PACKAGES += \
@@ -55,7 +56,8 @@ PRODUCT_PACKAGES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
+    frameworks/native/data/etc/tablet_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/tablet_core_hardware.xml \
+    $(LOCAL_PATH)/configs/permissions/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/apq_excluded_telephony_features.xml
 
 # Regional properties
 PRODUCT_COPY_FILES += \
@@ -77,6 +79,9 @@ PRODUCT_PACKAGES += \
 # Wireless pen
 PRODUCT_PACKAGES += \
     OplusPen
+
+# OnePlus Addons
+$(call inherit-product-if-exists, packages/apps/OnePlusAddons/oneplusaddons.mk)
 
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8650-common/common.mk)

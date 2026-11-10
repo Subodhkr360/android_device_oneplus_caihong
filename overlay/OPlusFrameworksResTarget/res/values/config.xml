@@ -274,4 +274,44 @@
          config_defaultRefreshRate may be set to 0, in which case the value set for
          config_defaultPeakRefreshRate will act as the default frame rate. -->
     <integer name="config_defaultRefreshRate">144</integer>
+    <integer name="config_defaultPeakRefreshRate">144</integer>
+
+    <!-- Flag indicating whether the device is voice-capable (meaning, it is also capable of
+         sending and receiving sms and data). -->
+    <bool name="config_voice_capable">false</bool>
+    <bool name="config_sms_capable">false</bool>
+
+    <!-- Number of physical SIM slots on the device. For wifi-only tablets this is 0. -->
+    <integer name="config_num_physical_slots">0</integer>
+
+    <!-- Device has no proximity sensor. Do not suspend when screen off due to proximity. -->
+    <bool name="config_suspendWhenScreenOffDueToProximity">false</bool>
+
+    <!-- Device has no hardware vibrator -->
+    <bool name="config_hasVibrator">false</bool>
+    <bool name="config_enableHapticTextHandle">false</bool>
+    <integer-array name="config_longPressVibePattern"/>
+    <integer-array name="config_virtualKeyVibePattern"/>
+
+    <!-- Enable Navigation Bar / Taskbar for tablets; do not move bar when rotated -->
+    <bool name="config_showNavigationBar">true</bool>
+    <bool name="config_navBarCanMove">false</bool>
+
+    <!-- Tablet multitasking: split-screen and freeform desktop windowing -->
+    <bool name="config_supportsSplitScreenMultiWindow">true</bool>
+    <bool name="config_freeformWindowManagement">true</bool>
+
+    <!-- Doze / Always-on Display is not suitable for LCD screens -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+    <!-- No in-display fingerprint (UDFPS) -->
+    <bool name="config_screen_off_udfps_enabled">false</bool>
+
+    <!-- Cellular / Telephony / IMS features unavailable for wifi-only tablet -->
+    <bool name="config_carrier_wfc_ims_available">false</bool>
+    <bool name="config_cellBroadcastAppLinks">false</bool>
+    <bool name="config_telephony5gStandalone">false</bool>
+    <bool name="config_telephony5gNonStandalone">false</bool>
+    <bool name="config_enableNewAutoSelectNetworkUI">false</bool>
 </resources>

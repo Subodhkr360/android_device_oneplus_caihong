@@ -13,5 +13,8 @@ ro.surface_flinger.game_default_frame_rate_override=144
 ro.surface_flinger.set_idle_timer_ms=450
 ro.surface_flinger.set_touch_timer_ms=500
 
+# Radio
+ro.radio.noril=yes
+
 # USB
 vendor.usb.product_string=OnePlus Pad 2

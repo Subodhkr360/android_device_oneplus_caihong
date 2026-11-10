@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+TARGET_IS_TABLET := true
+
 # Partitions
 BOARD_SUPER_PARTITION_SIZE := 15032385536
 
