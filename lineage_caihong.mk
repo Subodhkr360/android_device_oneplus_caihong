@@ -24,6 +24,18 @@ TARGET_SUPPORTS_BLUR := true
 TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 8 GEN 3" \
+    RisingMaintainer="Snakeඞ"
+
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
+RISING_MAINTAINER="Snakeඞ"
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.build.product=caihong
+
+
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
